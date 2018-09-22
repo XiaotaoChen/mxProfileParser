@@ -106,7 +106,7 @@ def init_table(events):
             ops.append(str(events[i]['name']))
             if events[i]['name'] not in cnt.keys():
                 cnt.update({events[i]['name']: 0})
-            if e[i]['name'] not in dur.keys():
+            if events[i]['name'] not in dur.keys():
                 dur.update({events[i]['name']: 0})
 
     return ops, cnt, dur
